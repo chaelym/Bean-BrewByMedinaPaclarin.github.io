@@ -1,0 +1,534 @@
+/*  colors: FBF5E7, 7E7D23, 744B37, E5E492*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FBF5E7;
+    background-image: url(images/main/pattern.png);
+    background-size: contain;
+    font: "Host Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1051px) {
+   .header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        background-color: #7E7D23;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .nav ul li {
+        display: inline;
+        margin: 25px;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        color: #FBF5E7;
+        text-decoration: none;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .beanbrew {
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        text-align: left;
+        font-size: 2rem;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+
+    .headerbuttons {
+        display: flex;
+        gap: 10px;
+        padding-right: 20px;
+    }
+    .headerbuttons input {
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.5rem 0.7rem;
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 1rem;
+        width: 9rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .welcomeButton {
+        background-color: #FBF5E7;
+        color: #7E7D23;
+        border-color: #FBF5E7;
+        cursor: pointer;
+    }
+
+        /* banner */
+    .banner {
+        background-size: cover;
+        height: 25rem;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .message {
+        background-color: rgb(27, 29, 28,0.5);
+        height: 25rem;
+        width: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .message span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 3rem;
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        letter-spacing: 0.04rem;
+        font-size: 6rem;
+        line-height: 5rem;   
+    }
+
+    .banner .message span.highlight {
+        color: #E5E492;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 801px) {
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 13px;
+        background-color: #7E7D23;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    .nav ul li {
+        display: inline;
+        margin: 18px;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        color: #FBF5E7;
+        text-decoration: none;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .beanbrew {
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        text-align: left;
+        font-size: 1.5rem;
+        padding-top: 4px;
+        padding-left: 20px;
+    }
+
+    .headerbuttons {
+        display: flex;
+        gap: 9px;
+        padding-right: 20px;
+    }
+    .headerbuttons input {
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.3rem 0.5rem;
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 0.8rem;
+        height: 1.9rem;
+        width: 7.3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .welcomeButton {
+        background-color: #FBF5E7;
+        color: #7E7D23;
+        border-color: #FBF5E7;
+        cursor: pointer;
+    }
+
+    /* banner */
+    .banner {
+        background-size: cover;
+        height: 18rem;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .message {
+        background-color: rgb(27, 29, 28,0.5);
+        height: 18rem;
+        width: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .message span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 3rem;
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        letter-spacing: 0.04rem;
+        font-size: 4rem;
+        line-height: 4rem;   
+    }
+
+    .banner .message span.highlight {
+        color: #E5E492;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 501px) {
+   .header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        background-color: #7E7D23;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.7rem;
+    }
+
+    .nav ul li {
+        display: inline;
+        margin: 9px;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        color: #FBF5E7;
+        text-decoration: none;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .beanbrew {
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        text-align: left;
+        font-size: 1.3rem;
+        padding-top: 3px;
+        padding-left: 20px;
+    }
+
+    .headerbuttons {
+        display: flex;
+        gap: 8px;
+        padding-right: 20px;
+    }
+    .headerbuttons input {
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.2rem 0.4rem;
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 0.7rem;
+        height: 1.5rem;
+        width: 6.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .welcomeButton {
+        background-color: #FBF5E7;
+        color: #7E7D23;
+        border-color: #FBF5E7;
+        cursor: pointer;
+    }
+
+    /* banner */
+    .banner {
+        background-size: cover;
+        height: 13rem;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .message {
+        background-color: rgb(27, 29, 28,0.5);
+        height: 13rem;
+        width: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .message span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 3rem;
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        letter-spacing: 0.04rem;
+        font-size: 3rem;
+        line-height: 3rem;   
+    }
+
+    .banner .message span.highlight {
+        color: #E5E492;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 401px) {
+   .header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        background-color: #7E7D23;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.5rem;
+    }
+
+    .nav ul li {
+        display: inline;
+        margin: 9px;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        color: #FBF5E7;
+        text-decoration: none;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .beanbrew {
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        text-align: left;
+        font-size: 1rem;
+        padding-top: 3px;
+        padding-left: 20px;
+    }
+
+    .headerbuttons {
+        display: flex;
+        gap: 8px;
+        padding-right: 20px;
+    }
+    .headerbuttons input {
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.2rem 0.4rem;
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 0.5rem;
+        height: 1.5rem;
+        width: 4.8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .welcomeButton {
+        background-color: #FBF5E7;
+        color: #7E7D23;
+        border-color: #FBF5E7;
+        cursor: pointer;
+    }
+
+    /* banner */
+    .banner {
+        background-size: cover;
+        height: 13rem;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .message {
+        background-color: rgb(27, 29, 28,0.5);
+        height: 13rem;
+        width: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .message span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 3rem;
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        letter-spacing: 0.04rem;
+        font-size: 3rem;
+        line-height: 3rem;   
+    }
+
+    .banner .message span.highlight {
+        color: #E5E492;
+    }
+}
+
+@media (max-width: 400px) {
+   .header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 8px;
+        background-color: #7E7D23;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.5rem;
+    }
+
+    .nav ul li {
+        display: inline;
+        margin: 6px;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        color: #FBF5E7;
+        text-decoration: none;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .beanbrew {
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        text-align: left;
+        font-size: 0.8rem;
+        padding-top: 3px;
+        padding-left: 10px;
+    }
+
+    .headerbuttons {
+        display: flex;
+        gap: 6px;
+        padding-right: 10px;
+    }
+    .headerbuttons input {
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.1rem 0.3rem;
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 0.5rem;
+        height: 1.3rem;
+        width: 4.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .welcomeButton {
+        background-color: #FBF5E7;
+        color: #7E7D23;
+        border-color: #FBF5E7;
+        cursor: pointer;
+    }
+
+    /* banner */
+    .banner {
+        background-size: cover;
+        height: 8rem;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .message {
+        background-color: rgb(27, 29, 28,0.5);
+        height: 8rem;
+        width: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .message span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 2rem;
+        color: #FBF5E7;
+        font-family: "Bolota", sans-serif;
+        letter-spacing: 0.04rem;
+        font-size: 1.8rem;
+        line-height: 1.8rem;   
+    }
+
+    .banner .message span.highlight {
+        color: #E5E492;
+    }
+}

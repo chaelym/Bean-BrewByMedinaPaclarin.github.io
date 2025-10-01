@@ -1,0 +1,977 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FBF5E7;
+    background-image: url(images/main/pattern.png);
+    background-size: contain;
+    font: "Host Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1051px){
+    /* banner */
+    .banner {
+        background-image: url("images/menu/menuBanner.jpg");
+    }
+
+    /* quicklinks */
+    .quickLinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        gap: 4rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .quickLinkItem {
+        position: relative;
+        width: 26rem;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .quickLinkItem img {
+        width: 100%;
+        display: block;
+    }
+
+    .quickLinkItem .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(82, 51, 36, 0.6);
+    }
+
+    .quickLinkItem .overlayText {
+        position: absolute;
+        inset: 0;
+        font-family: "Bolota", sans-serif;
+        font-size: 2rem;
+        color: #FBF5E7;
+    }
+
+    .overlayText {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+
+    .quickLinkItem:hover .overlay {
+        background: rgba(82, 51, 36, 0.9);
+    }
+
+    /* Menu scetion */
+    .sectionText {
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        font-weight: 500;
+        font-size: 2rem;
+        padding-left: 3rem;
+        white-space: nowrap;
+    }
+
+    .coffeeDivider, .teaDivider, .pastriesDivider {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .coffeeLine, .teaLine, .pastriesLine {
+        background-color: #744B37;
+        border: none; 
+        height: 2px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 3rem;
+    }
+
+    table {
+        width: 85vw;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    table td, table th {
+        padding: 0.5rem;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .menuimgs td img {
+        width: 15rem;
+    }
+
+    .menunames td {
+        font-family: "Bolota", sans-serif;
+        font-size: 2rem;
+        color: #7e7d23;
+        padding-bottom: 0rem;
+    }
+
+    .menuprices td {
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 1.2rem;
+        color: #523324;
+        font-weight: 500;
+        padding-top: 0rem;
+    }
+
+    .orderbuttons td input {
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+        width: 5rem;
+    }
+
+    #lineTwo td img {
+        padding-top: 3rem;
+    }
+
+    /*info table */
+    .infoTableSection {
+        padding: 3rem;
+        display: flex;
+        font-size: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infoTable {
+        border-collapse: collapse;
+    }
+
+    .infoTable tr td {
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+        padding: 2rem;
+    }
+
+    .infoTable td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+        color: white;
+        background-color: #A68E75;
+        font-family: "Host Grotesk", sans-serif;
+        text-wrap: balance;
+        font-weight: 500;
+    }
+
+    .leftTop {
+        background-image: url("images/menu/left\ mid.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightTop {
+        background-image: url("images/menu/right\ top.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .leftBottom {
+        background-image: url("images/menu/left\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightBottom {
+        background-image: url("images/menu/right\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width:1050px) and (min-width:801px){
+    /* banner */
+    .banner {
+        background-image: url("images/menu/menuBanner.jpg");
+    }
+
+    /* quicklinks */
+    .quickLinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        gap: 3rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .quickLinkItem {
+        position: relative;
+        width: 26rem;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .quickLinkItem img {
+        width: 100%;
+        display: block;
+    }
+
+    .quickLinkItem .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(82, 51, 36, 0.6);
+    }
+
+    .quickLinkItem .overlayText {
+        position: absolute;
+        inset: 0;
+        font-family: "Bolota", sans-serif;
+        font-size: 1.8rem;
+        color: #FBF5E7;
+    }
+
+    .overlayText {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+    }
+
+    .quickLinkItem:hover .overlay {
+        background: rgba(82, 51, 36, 0.9);
+    }
+
+    /* Menu scetion */
+    .sectionText {
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        font-weight: 500;
+        font-size: 1.8rem;
+        padding-left: 3rem;
+        white-space: nowrap;
+    }
+
+    .coffeeDivider, .teaDivider, .pastriesDivider {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .coffeeLine, .teaLine, .pastriesLine {
+        background-color: #744B37;
+        border: none; 
+        height: 1.5px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 3rem;
+    }
+
+    table {
+        width: 85vw;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    table td, table th {
+        padding: 0.5rem;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .menuimgs td img {
+        width: 15rem;
+    }
+
+    .menunames td {
+        font-family: "Bolota", sans-serif;
+        font-size: 1.8rem;
+        color: #7e7d23;
+        padding-bottom: 0rem;
+    }
+
+    .menuprices td {
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 1rem;
+        color: #523324;
+        font-weight: 500;
+        padding-top: 0rem;
+    }
+
+    .orderbuttons td input {
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.8rem;
+        width: 5rem;   
+    }
+
+    #lineTwo td img {
+        padding-top: 3rem;
+    }
+
+    /*info table */
+    .infoTableSection {
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8rem;
+        align-items: center;
+    }
+
+    .infoTable {
+        border-collapse: collapse;
+    }
+
+    .infoTable tr td {
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .infoTable td {
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        background-color: #A68E75;
+        font-family: "Host Grotesk", sans-serif;
+        text-wrap: balance;
+        font-weight: 500;
+        padding: 2rem 2rem;
+    }
+
+    .leftTop {
+        background-image: url("images/menu/left\ mid.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightTop {
+        background-image: url("images/menu/right\ top.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .leftBottom {
+        background-image: url("images/menu/left\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightBottom {
+        background-image: url("images/menu/right\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width:800px) and (min-width:501px){
+    /* banner */
+    .banner {
+        background-image: url("images/menu/menuBanner.jpg");
+    }
+
+    /* quicklinks */
+    .quickLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        gap: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .quickLinkItem {
+        position: relative;
+        width: 26rem;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .quickLinkItem img {
+        width: 100%;
+        display: block;
+    }
+
+    .quickLinkItem .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(82, 51, 36, 0.6);
+    }
+
+    .quickLinkItem .overlayText {
+        position: absolute;
+        inset: 0;
+        font-family: "Bolota", sans-serif;
+        font-size: 1rem;
+        color: #FBF5E7;
+    }
+
+    .overlayText {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+    }
+
+    .quickLinkItem:hover .overlay {
+        background: rgba(82, 51, 36, 0.9);
+    }
+
+    /* Menu scetion */
+    .sectionText {
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        font-weight: 500;
+        font-size: 1rem;
+        padding-left: 3rem;
+        white-space: nowrap;
+    }
+
+    .coffeeDivider, .teaDivider, .pastriesDivider {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 0rem;
+    }
+
+    .coffeeLine, .teaLine, .pastriesLine {
+        background-color: #744B37;
+        border: none; 
+        height: 1px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 3rem;
+    }
+
+    table {
+        width: 85vw;
+        height:30vw;
+        border-collapse: collapse;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+
+    table td, table th {
+        padding: 0.5rem;
+        text-align: center;
+        word-wrap: break-word;
+        width: auto;
+    }
+
+    .menuimgs td img {
+        max-width:100%;
+        margin: 0 auto;
+        width: auto;
+        padding: 0rem;
+    }
+
+    .menunames td {
+        font-family: "Bolota", sans-serif;
+        font-size: 1rem;
+        color: #7e7d23;
+        padding-bottom: 0rem;
+    }
+
+    .menuprices td {
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 0.6rem;
+        color: #523324;
+        font-weight: 500;
+        padding-top: 0rem;
+    }
+
+    .orderbuttons td input {
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.5rem;
+        height: 1.5rem;
+        width: 4rem;   
+    }
+
+    #lineTwo td img {
+        padding-top: 1rem;
+    }
+
+    /*info table */
+    .infoTableSection {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8rem;
+        align-items: center;
+    }
+
+    .infoTable {
+        border-collapse: collapse;
+    }
+
+    .infoTable tr td {
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .infoTable td {
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        background-color: #A68E75;
+        font-family: "Host Grotesk", sans-serif;
+        text-wrap: balance;
+        font-weight: 500;
+        padding: 1rem 1rem;
+    }
+
+    .leftTop {
+        background-image: url("images/menu/left\ mid.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightTop {
+        background-image: url("images/menu/right\ top.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .leftBottom {
+        background-image: url("images/menu/left\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightBottom {
+        background-image: url("images/menu/right\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width:500px) and (min-width:401px){
+    /* banner */
+    .banner {
+        background-image: url("images/menu/menuBanner.jpg");
+    }
+
+    /* quicklinks */
+    .quickLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        gap: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .quickLinkItem {
+        position: relative;
+        width: 20rem;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .quickLinkItem img {
+        width: 100%;
+        display: block;
+    }
+
+    .quickLinkItem .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(82, 51, 36, 0.6);
+    }
+
+    .quickLinkItem .overlayText {
+        position: absolute;
+        inset: 0;
+        font-family: "Bolota", sans-serif;
+        font-size: 0.8rem;
+        color: #FBF5E7;
+    }
+
+    .overlayText {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .quickLinkItem:hover .overlay {
+        background: rgba(82, 51, 36, 0.9);
+    }
+
+    /* Menu scetion */
+    .sectionText {
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        font-weight: 500;
+        font-size: 0.8rem;
+        padding-left: 2.5rem;
+        white-space: nowrap;
+    }
+
+    .coffeeDivider, .teaDivider, .pastriesDivider {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .coffeeLine, .teaLine, .pastriesLine {
+        background-color: #744B37;
+        border: none; 
+        height: 1px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 2.5rem;
+    }
+
+    table {
+        width: 85vw;
+        height: 20vw;
+        border-collapse: collapse;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+
+    table td, table th {
+        padding: 0.5rem;
+        text-align: center;
+        word-wrap: break-word;
+        width: auto;
+    }
+
+    .menuimgs td img {
+        max-width:100%;
+        margin: 0 auto;
+        width: auto;
+        padding: 0rem;
+    }
+
+    .menunames td {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.8rem;
+        color: #7e7d23;
+        padding-bottom: 0rem;
+    }
+
+    .menuprices td {
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 0.5rem;
+        color: #523324;
+        font-weight: 500;
+        padding-top: 0rem;
+    }
+
+    .orderbuttons td input {
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.5rem;
+        height: 1.5rem;
+        width: 3rem; 
+    }
+
+    #lineTwo td img {
+        padding-top: 0.5rem;
+    }
+
+    /*info table */
+    .infoTableSection {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.4rem;
+        align-items: center;
+    }
+
+    .infoTable {
+        border-collapse: collapse;
+    }
+
+    .infoTable tr td {
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .infoTable td {
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        background-color: #A68E75;
+        font-family: "Host Grotesk", sans-serif;
+        text-wrap: balance;
+        font-weight: 500;
+        padding: 0.5rem;
+    }
+
+    .leftTop {
+        background-image: url("images/menu/left\ mid.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightTop {
+        background-image: url("images/menu/right\ top.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .leftBottom {
+        background-image: url("images/menu/left\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightBottom {
+        background-image: url("images/menu/right\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width:400px){
+    /* banner */
+    .banner {
+        background-image: url("images/menu/menuBanner.jpg");
+    }
+
+    /* quicklinks */
+    .quickLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        gap: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .quickLinkItem {
+        position: relative;
+        width: 20rem;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .quickLinkItem img {
+        width: 100%;
+        display: block;
+    }
+
+    .quickLinkItem .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(82, 51, 36, 0.6);
+    }
+
+    .quickLinkItem .overlayText {
+        position: absolute;
+        inset: 0;
+        font-family: "Bolota", sans-serif;
+        font-size: 0.7rem;
+        color: #FBF5E7;
+    }
+
+    .overlayText {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+
+    .quickLinkItem:hover .overlay {
+        background: rgba(82, 51, 36, 0.9);
+    }
+
+    /* Menu scetion */
+    .sectionText {
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        font-weight: 500;
+        font-size: 0.7rem;
+        padding-left: 2rem;
+        white-space: nowrap;
+    }
+
+    .coffeeDivider, .teaDivider, .pastriesDivider {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .coffeeLine, .teaLine, .pastriesLine {
+        background-color: #744B37;
+        border: none; 
+        height: 1px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 2rem;
+    }
+
+    table {
+        width: 85vw;
+        height: 10vw;
+        border-collapse: collapse;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+
+    table td, table th {
+        padding: 0.5rem;
+        text-align: center;
+        word-wrap: break-word;
+        width: auto;
+    }
+
+    .menuimgs td img {
+        max-width:100%;
+        margin: 0 auto;
+        width: auto;
+        padding: 0rem;
+    }
+
+    .menunames td {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.6rem;
+        color: #7e7d23;
+        padding-bottom: 0rem;
+    }
+
+    .menuprices td {
+        font-family: "Host Grotesk", sans-serif;
+        font-size: 0.4rem;
+        color: #523324;
+        font-weight: 500;
+        padding-top: 0rem;
+    }
+
+    .orderbuttons td input {
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.4rem;
+        height: 1.3rem;
+        width: 2.5rem;
+    }
+
+    #lineTwo td img {
+        padding-top: 0.5rem;
+    }
+
+    /*info table */
+    .infoTableSection {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.3rem;
+        align-items: center;
+    }
+
+    .infoTable {
+        border-collapse: collapse;
+    }
+
+    .infoTable tr td {
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .infoTable td {
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        background-color: #A68E75;
+        font-family: "Host Grotesk", sans-serif;
+        text-wrap: balance;
+        font-weight: 500;
+        padding: 0.5rem;
+    }
+
+    .leftTop {
+        background-image: url("images/menu/left\ mid.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightTop {
+        background-image: url("images/menu/right\ top.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .leftBottom {
+        background-image: url("images/menu/left\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .rightBottom {
+        background-image: url("images/menu/right\ bot.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}

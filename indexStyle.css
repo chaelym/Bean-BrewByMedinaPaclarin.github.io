@@ -1,0 +1,1405 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FBF5E7;
+    background-image: url(images/main/pattern.png);
+    background-size: contain;
+    font: "Host Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:1051px) {
+    /* banner */
+    .banner {
+        background-image: url("images/home/homeBanner.jpg");
+    }
+
+    /* promo section */
+    .promoSection {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .bannerContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        max-width: auto;
+        width: 90%;
+        align-items: center;
+    }
+
+    .promoMessage {
+        border: 0.2rem;
+        border-style: dashed;
+        border-color: #744B37;
+        height: 26.5rem;
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .promoImageDiv {
+        background-color: #7E7D23;
+        background-size: cover;
+        background-position: center;
+        height: 26.5rem;
+    }
+
+    .promoImageDiv img {
+        padding-left: 2%;
+        width: 98%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .holidayLatte {
+        font-family: "Bolota", sans-serif;
+        font-size: 3.5rem;
+        color: #7e7d23;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 0.5rem;
+        line-height: 3.2rem;
+    }
+
+    .promoDateName, .promoInfo {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        font-size: 1rem;
+    }
+
+    .promoDateName {
+        padding-bottom: 0.3rem;
+        padding-top: 0.3rem;
+        font-weight: 500;
+    }
+
+    .special {
+        padding-bottom: 0.1rem;
+    }
+
+    .price {
+        font-family: "Bolota", sans-serif;
+        font-size: 1rem;
+        color: #7e7d23;
+    }
+
+    .promoInfo {
+        padding-top: 2rem;
+    }
+    
+    .promoDateName ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .promoDateName li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 10px;
+        padding-left: 15px;
+    }
+
+    .orderButton {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+        width: 5rem;    
+    }
+
+    /* About us section */
+    .aboutUsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1rem;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .aboutUsContainer > div {
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .aboutUsContainer div:nth-child(1) {
+        grid-column: 1/3;
+        padding: 0.1rem;
+        background-color: #744B37;
+        text-wrap: nowrap;
+    }
+
+    .blendBelongText {
+        color: #FBF5E7;
+    }
+
+    .beanBrewText {
+        color: #E5E492;
+    }
+
+    .aboutUsContainer div:nth-child(2) {
+        height: 30rem;
+        background-image: url(images/home/aboutUs.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .aboutUsContainer div:nth-child(3) {
+        height: 30rem;
+        background-color: #7e7d23;
+        color: #FBF5E7;
+        text-align: justify;
+        font-size: 1rem;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+    }
+
+    .aboutUsInfo * {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-weight: 0;
+    }
+
+    .aboutUsText {
+        font-family: "Bolota", sans-serif;
+        font-size: 3.5rem;
+        color: #FBF5E7;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .taglineContainer {
+        background-image: url(images/home/banner.png);
+        background-size: contain;
+        min-height: 40px;
+    }
+
+    /* contact information section */
+    .contactInfoContainer {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        gap: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .contactInfoTextInside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        padding-left: 3.5rem;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        font-family: "Bolota", sans-serif;
+        font-size: 3.5rem;
+        color: #7e7d23;
+        width: 25rem;
+        line-height: 2.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .addressTitle {
+        font-weight: 500;
+        color: #744B37;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        padding-left: 2rem;
+    }
+
+    .addressTitle ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .addressTitle li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 10px;
+        padding-left: 15px;
+    }
+
+    .label { 
+        font-family: "Bolota", sans-serif;
+        font-size: 1rem;
+        color: #7e7d23;
+    }
+
+    .contactInfoContainer div:nth-child(2) {
+        text-align:left;
+        cursor: zoom-in;
+    }
+
+    #zoom_img {
+        display: none;
+    }
+
+    .imageMap:hover {
+        cursor:zoom-in
+    }
+
+    .imageMap {
+        transition: transform 0.5s ease-in-out;
+        max-width: 90%;
+        height: auto;
+        display: block;
+    }
+
+    .map {
+        max-width: 600px;  
+        width: 100%;  
+        display: flex;   
+        justify-content: center; 
+        overflow: hidden;
+        padding-right: 1rem;
+    }
+
+    #zoom_img:checked ~ label > .imageMap {
+        transform: scale(1.2);
+        cursor: zoom-out;
+    }
+}
+
+@media(max-width: 1050px) and (min-width:801px){
+    /* banner */
+    .banner {
+        background-image: url("images/home/homeBanner.jpg");
+    }
+
+    /* promo section */
+    .promoSection {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .bannerContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        max-width: auto;
+        width: 90%;
+        align-items: center;
+    }
+
+    .promoMessage {
+        border: 0.2rem;
+        border-style: dashed;
+        border-color: #744B37;
+        height: 22rem;
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .promoImageDiv {
+        background-color: #7E7D23;
+        background-size: cover;
+        background-position: center;
+        height: 22rem;
+    }
+
+    .promoImageDiv img {
+        padding-left: 2%;
+        width: 98%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .holidayLatte {
+        font-family: "Bolota", sans-serif;
+        font-size: 2.5rem;
+        color: #7e7d23;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 0.5rem;
+        line-height: 2.8rem;
+    }
+
+    .promoDateName, .promoInfo {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        font-size: 0.8rem;
+    }
+
+    .promoDateName {
+        padding-bottom: 0.3rem;
+        padding-top: 0.3rem;
+        font-weight: 500;
+    }
+
+    .special {
+        padding-bottom: 0.1rem;
+    }
+
+    .price {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.8rem;
+        color: #7e7d23;
+    }
+
+    .promoInfo {
+        padding-top: 2rem;
+    }
+    
+    .promoDateName ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .promoDateName li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 8px;
+        padding-left: 13px;
+    }
+
+    .orderButton {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.8rem;
+        width: 5rem;    
+    }
+
+    /* About us section */
+    .aboutUsContainer {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1rem;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .aboutUsContainer > div {
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .aboutUsContainer div:nth-child(1) {
+        grid-column: 1/3;
+        padding: 0.1rem;
+        background-color: #744B37;
+        text-wrap: nowrap;
+    }
+
+    .blendBelongText {
+        color: #FBF5E7;
+    }
+
+    .beanBrewText {
+        color: #E5E492;
+    }
+
+    .aboutUsContainer div:nth-child(2) {
+        height: 25rem;
+        background-image: url(images/home/aboutUs.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .aboutUsContainer div:nth-child(3) {
+        height: 25rem;
+        background-color: #7e7d23;
+        color: #FBF5E7;
+        text-align: justify;
+        font-size: 0.8rem;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+    }
+
+    .aboutUsInfo * {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-weight: 0;
+    }
+
+    .aboutUsText {
+        font-family: "Bolota", sans-serif;
+        font-size: 2.5rem;
+        color: #FBF5E7;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .taglineContainer * {
+        font-size:20px;
+    }
+
+    .taglineContainer {
+        background-image: url(images/home/banner.png);
+        background-size: contain;
+        min-height: 30px;
+    }
+
+    /* contact information section */
+    .contactInfoContainer {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        font-family: "Host Grotesk", sans-serif; 
+    }
+
+    .contactInfoTextInside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        padding-left: 3.5rem;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        font-family: "Bolota", sans-serif;
+        font-size: 2.5rem;
+        color: #7e7d23;
+        width: 25rem;
+        line-height: 2.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .addressTitle {
+        font-weight: 500;
+        color: #744B37;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .addressTitle ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .addressTitle li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 10px;
+        padding-left: 15px;
+    }
+
+    .label { 
+        font-family: "Bolota", sans-serif;
+        font-size: 1rem;
+        color: #7e7d23;
+    }
+
+    .contactInfoContainer div:nth-child(2) {
+        text-align:left;
+        cursor: zoom-in;
+    }
+
+    #zoom_img {
+        display: none;
+    }
+
+    .imageMap:hover {
+        cursor:zoom-in
+    }
+
+    .imageMap {
+        transition: transform 0.5s ease-in-out;
+        max-width: 90%;
+        height: auto;
+        display: block;
+    }
+
+    .map {
+        max-width: 600px;
+        min-width: 300px;
+        width: 100%;  
+        display: flex;   
+        justify-content: center; 
+        overflow: hidden;
+        padding-right: 1rem;
+    }
+
+    #zoom_img:checked ~ label > .imageMap {
+        transform: scale(1.2);
+        cursor: zoom-out;
+    }
+}
+
+@media(max-width: 800px) and (min-width:501px){
+    /* banner */
+    .banner {
+        background-image: url("images/home/homeBanner.jpg");
+    }
+
+    /* promo section */
+    .promoSection {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 0;
+    }
+
+    .bannerContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        max-width: auto;
+        width: 90%;
+        align-items: center;
+    }
+
+    .promoMessage {
+        border: 0.15rem;
+        border-style: dashed;
+        border-color: #744B37;
+        height: 15rem;
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .promoImageDiv {
+        background-color: #7E7D23;
+        background-size: cover;
+        background-position: center;
+        height: 15rem;
+    }
+
+    .promoImageDiv img {
+        padding-left: 2%;
+        width: 98%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .holidayLatte {
+        font-family: "Bolota", sans-serif;
+        font-size: 1.5rem;
+        color: #7e7d23;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 0.5rem;
+        line-height: 1.5rem;
+    }
+
+    .promoDateName, .promoInfo {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-size: 0.5rem;
+    }
+
+    .promoDateName {
+        padding-bottom: 0.3rem;
+        padding-top: 0.3rem;
+        font-weight: 500;
+    }
+
+    .special {
+        padding-bottom: 0.1rem;
+    }
+
+    .price {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.5rem;
+        color: #7e7d23;
+    }
+
+    .promoInfo {
+        padding-top: 2rem;
+    }
+    
+    .promoDateName ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .promoDateName li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 5px;
+        padding-left: 10px;
+    }
+
+    .orderButton {
+        margin-left: 2.5rem;
+        margin-top: 1rem;
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.5rem;
+        height: 1.5rem;
+        width: 4rem;       
+    }
+
+    /* About us section */
+    .aboutUsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1rem;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .aboutUsContainer > div {
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .aboutUsContainer div:nth-child(1) {
+        grid-column: 1/3;
+        padding: 0.1rem;
+        background-color: #744B37;
+        text-wrap: nowrap;
+    }
+
+    .blendBelongText {
+        color: #FBF5E7;
+    }
+
+    .beanBrewText {
+        color: #E5E492;
+    }
+
+    .aboutUsContainer div:nth-child(2) {
+        height: 15rem;
+        background-image: url(images/home/aboutUs.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .aboutUsContainer div:nth-child(3) {
+        height: 15rem;
+        background-color: #7e7d23;
+        color: #FBF5E7;
+        text-align: justify;
+        font-size: 0.5rem;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+    }
+
+    .aboutUsInfo * {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        font-weight: 0;
+    }
+
+    .aboutUsText {
+        font-family: "Bolota", sans-serif;
+        font-size: 1.5rem;
+        color: #FBF5E7;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .taglineContainer * {
+        font-size:16px;
+    }
+
+    .taglineContainer {
+        background-image: url(images/home/banner.png);
+        background-size: contain;
+        min-height: 15px;
+    }
+
+    /* contact information section */
+    .contactInfoContainer {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 0.7rem;
+        padding-bottom: 1.5rem;
+        font-family: "Host Grotesk", sans-serif; 
+    }
+
+    .contactInfoTextInside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        padding-left: 3rem;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        font-family: "Bolota", sans-serif;
+        font-size: 1.5rem;
+        color: #7e7d23;
+        width: 15rem;
+        line-height: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .addressTitle {
+        font-weight: 500;
+        color: #744B37;
+        font-size: 0.5rem;
+        padding-left: 2rem;
+    }
+
+    .addressTitle ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .addressTitle li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 5px;
+        padding-left: 10px;
+    }
+
+    .label { 
+        font-family: "Bolota", sans-serif;
+        font-size: 0.5rem;
+        color: #7e7d23;
+    }
+
+    .contactInfoContainer div:nth-child(2) {
+        text-align:left;
+        cursor: zoom-in;
+    }
+
+    #zoom_img {
+        display: none;
+    }
+
+    .imageMap:hover {
+        cursor:zoom-in
+    }
+
+    .imageMap {
+        transition: transform 0.5s ease-in-out;
+        max-width: 90%;
+        height: auto;
+        display: block;
+    }
+
+    .map {
+        max-width: 300px;
+        min-width: 80px;
+        width: 100%;  
+        display: flex;   
+        justify-content: center; 
+        overflow: hidden;
+        padding-right: 1rem;
+    }
+
+    #zoom_img:checked ~ label > .imageMap {
+        transform: scale(1.2);
+        cursor: zoom-out;
+    }
+}
+
+@media(max-width: 500px) and (min-width:401px){
+    /* banner */
+    .banner {
+        background-image: url("images/home/homeBanner.jpg");
+    }
+
+    /* promo section */
+    .promoSection {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 0;
+    }
+
+    .bannerContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        max-width: auto;
+        width: 90%;
+        align-items: center;
+    }
+
+    .promoMessage {
+        border: 0.1rem;
+        border-style: dashed;
+        border-color: #744B37;
+        height: 11rem;
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .promoImageDiv {
+        background-color: #7E7D23;
+        background-size: cover;
+        background-position: center;
+        height: 11rem;
+    }
+
+    .promoImageDiv img {
+        padding-left: 2%;
+        width: 98%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .holidayLatte {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.8rem;
+        color: #7e7d23;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .promoDateName, .promoInfo {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 0.5rem;
+    }
+
+    .promoDateName {
+        padding-bottom: 0.3rem;
+        padding-top: 0.3rem;
+        font-weight: 500;
+    }
+
+    .special {
+        padding-bottom: 0.1rem;
+    }
+
+    .price {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.4rem;
+        color: #7e7d23;
+    }
+
+    .promoInfo {
+        padding-top: 1rem;
+    }
+    
+    .promoDateName ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .promoDateName li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 5px;
+        padding-left: 10px;
+    }
+
+    .orderButton {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.5rem;
+        height: 1.5rem;
+        width: 3rem;       
+    }
+
+    /* About us section */
+    .aboutUsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1rem;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .aboutUsContainer > div {
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutUsContainer div:nth-child(1) {
+        grid-column: 1/3;
+        padding: 0.1rem;
+        background-color: #744B37;
+        text-wrap: nowrap;
+    }
+
+    .blendBelongText {
+        color: #FBF5E7;
+    }
+
+    .beanBrewText {
+        color: #E5E492;
+    }
+
+    .aboutUsContainer div:nth-child(2) {
+        height: 12rem;
+        background-image: url(images/home/aboutUs.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .aboutUsContainer div:nth-child(3) {
+        height: 12rem;
+        background-color: #7e7d23;
+        color: #FBF5E7;
+        text-align: justify;
+        font-size: 0.4rem;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+    }
+
+    .aboutUsInfo * {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        font-weight: 0;
+    }
+
+    .aboutUsText {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.8rem;
+        color: #FBF5E7;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .taglineContainer * {
+        font-size:13px;
+    }
+
+    .taglineContainer {
+        background-image: url(images/home/banner.png);
+        background-size: contain;
+        min-height: 15px;
+    }
+
+    /* contact information section */
+    .contactInfoContainer {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 0.5rem;
+        padding-bottom: 1.3rem;
+        font-family: "Host Grotesk", sans-serif; 
+    }
+
+    .contactInfoTextInside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        padding-left: 3rem;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        font-family: "Bolota", sans-serif;
+        font-size: 0.8rem;
+        color: #7e7d23;
+        width: 10rem;
+        line-height: 1rem;
+        padding-bottom: 0.4rem;
+    }
+
+    .addressTitle {
+        font-weight: 500;
+        color: #744B37;
+        font-size: 0.4rem;
+        line-height: 0.4rem;
+        padding-left: 0.5rem;
+    }
+
+    .addressTitle ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .addressTitle li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 5px;
+        padding-left: 10px;
+    }
+
+    .label { 
+        font-family: "Bolota", sans-serif;
+        font-size: 0.4rem;
+        color: #7e7d23;
+    }
+
+    .contactInfoContainer div:nth-child(2) {
+        text-align:left;
+        cursor: zoom-in;
+    }
+
+    #zoom_img {
+        display: none;
+    }
+
+    .imageMap:hover {
+        cursor:zoom-in
+    }
+
+    .imageMap {
+        transition: transform 0.5s ease-in-out;
+        max-width: 90%;
+        height: auto;
+        display: block;
+    }
+
+    .map {
+        max-width: 200px;
+        min-width: 50px;
+        width: 100%;  
+        display: flex;   
+        justify-content: center; 
+        overflow: hidden;
+        padding-right: 1rem;
+    }
+
+    #zoom_img:checked ~ label > .imageMap {
+        transform: scale(1.2);
+        cursor: zoom-out;
+    }
+}
+
+@media (max-width: 400px){
+    /* banner */
+    .banner {
+        background-image: url("images/home/homeBanner.jpg");
+    }
+
+    /* promo section */
+    .promoSection {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 0;
+    }
+
+    .bannerContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+        max-width: auto;
+        width: 90%;
+        align-items: center;
+    }
+
+    .promoMessage {
+        border: 0.1rem;
+        border-style: dashed;
+        border-color: #744B37;
+        height: 9rem;
+        font-family: "Host Grotesk", sans-serif;
+        color: #744B37;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .promoImageDiv {
+        background-color: #7E7D23;
+        background-size: cover;
+        background-position: center;
+        height: 9rem;
+    }
+
+    .promoImageDiv img {
+        padding-left: 2%;
+        width: 98%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .holidayLatte {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.7rem;
+        color: #7e7d23;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        margin-top: 0.5rem;
+        line-height: 0.8rem;
+    }
+
+    .promoDateName, .promoInfo {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 0.4rem;
+    }
+
+    .promoDateName {
+        padding-bottom: 0.2rem;
+        padding-top: 0.2rem;
+        font-weight: 500;
+    }
+
+    .special {
+        padding-bottom: 0.1rem;
+    }
+
+    .price {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.4rem;
+        color: #7e7d23;
+    }
+
+    .promoInfo {
+        padding-top: 1rem;
+    }
+    
+    .promoDateName ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .promoDateName li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 5px;
+        padding-left: 10px;
+    }
+
+    .orderButton {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        background-color: #7E7D23;
+        color: #FBF5E7;
+        border-color: #7E7D23;
+        cursor: pointer;
+        border-radius: 5rem;
+        border-style: solid;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.4rem;
+        height: 1.3rem;
+        width: 2.5rem;     
+    }
+
+    /* About us section */
+    .aboutUsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: "Host Grotesk", sans-serif;
+    }
+
+    .aboutUsContainer > div {
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutUsContainer div:nth-child(1) {
+        grid-column: 1/3;
+        padding: 0.1rem;
+        background-color: #744B37;
+        text-wrap: nowrap;
+    }
+
+    .blendBelongText {
+        color: #FBF5E7;
+    }
+
+    .beanBrewText {
+        color: #E5E492;
+    }
+
+    .aboutUsContainer div:nth-child(2) {
+        height: 9rem;
+        background-image: url(images/home/aboutUs.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .aboutUsContainer div:nth-child(3) {
+        height: 9rem;
+        background-color: #7e7d23;
+        color: #FBF5E7;
+        text-align: justify;
+        font-size: 0.3rem;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+    }
+
+    .aboutUsInfo * {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-weight: 0;
+    }
+
+    .aboutUsText {
+        font-family: "Bolota", sans-serif;
+        font-size: 0.7rem;
+        color: #FBF5E7;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .taglineContainer * {
+        font-size:10px;
+    }
+
+    .taglineContainer {
+        background-image: url(images/home/banner.png);
+        background-size: contain;
+        min-height: 9px;
+    }
+
+    /* contact information section */
+    .contactInfoContainer {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: "Host Grotesk", sans-serif; 
+    }
+
+    .contactInfoTextInside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        padding-left: 3rem;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        font-family: "Bolota", sans-serif;
+        font-size: 0.7rem;
+        color: #7e7d23;
+        width: 8rem;
+        line-height: 0.8rem;
+        padding-bottom: 0.4rem;
+    }
+
+    .addressTitle {
+        font-weight: 500;
+        color: #744B37;
+        font-size: 0.3rem;
+        padding-left: 0.4rem;
+    }
+
+    .addressTitle ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .addressTitle li {
+        background-image: url('images/main/coffee_bean.png');
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 5px;
+        padding-left: 10px;
+    }
+
+    .label { 
+        font-family: "Bolota", sans-serif;
+        font-size: 0.3rem;
+        color: #7e7d23;
+    }
+
+    .contactInfoContainer div:nth-child(2) {
+        text-align:left;
+        cursor: zoom-in;
+    }
+
+    #zoom_img {
+        display: none;
+    }
+
+    .imageMap:hover {
+        cursor:zoom-in
+    }
+
+    .imageMap {
+        transition: transform 0.5s ease-in-out;
+        max-width: 90%;
+        height: auto;
+        display: block;
+    }
+
+    .map {
+        max-width: 180px;   
+        min-width: 50px;
+        width: 100%;  
+        display: flex;   
+        justify-content: center; 
+        overflow: hidden;
+        padding-right: 1rem;
+    }
+
+    #zoom_img:checked ~ label > .imageMap {
+        transform: scale(1.2);
+        cursor: zoom-out;
+    }
+}

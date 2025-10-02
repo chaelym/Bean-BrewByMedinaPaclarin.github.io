@@ -11,7 +11,7 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face{
+@font-face {
     font-family: "Host Grotesk";
     src: url("3d9e6bbad16ecc01310433beda2ccd6a.eot");
     src: url("3d9e6bbad16ecc01310433beda2ccd6a.eot?#iefix")format("embedded-opentype"),
@@ -19,7 +19,7 @@
         url("3d9e6bbad16ecc01310433beda2ccd6a.woff2")format("woff2"),
         url("3d9e6bbad16ecc01310433beda2ccd6a.ttf")format("truetype"),
         url("3d9e6bbad16ecc01310433beda2ccd6a.svg#Host Grotesk")format("svg");
-    font-weight:normal;
-    font-style:normal;
-    font-display:swap;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }

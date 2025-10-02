@@ -870,7 +870,7 @@ body {
     }
 
     .promoMessage {
-        border: 0.1rem;
+        border: 0.0.8rem;
         border-style: dashed;
         border-color: #744B37;
         height: 11rem;
@@ -1404,4 +1404,5 @@ body {
     }
 
 }
+
 
